@@ -1,0 +1,109 @@
+pre {
+  background-color: aliceblue;
+  color: #999;
+}
+/* 基本スタイル */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+h1,
+h2 {
+  color: #4a90e2;
+}
+
+h1 {
+  text-align: center; /* テキストを中央に配置 */
+  margin-top: 20px; /* 上のマージンを追加して余白を調整 */
+  margin-bottom: 20px; /* 下のマージンを追加して余白を調整 */
+}
+
+input[type="date"],
+input[type="text"],
+button {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: calc(30% - 22px);
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4a90e2;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background-color: #357abd;
+}
+
+/* チェックボックスのラベルのスタイリング */
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+/* コードブロックのスタイリング */
+pre {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 15px;
+  overflow: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#timeOptions {
+  margin-bottom: 20px;
+}
+
+/* リンクスタイル */
+a {
+  color: #4a90e2;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* コピー ボタンの表示スタイル */
+#copyButton {
+  display: block;
+  margin-top: 10px;
+}
+
+/* 追加ボタンのスタイリング */
+#newTime + button {
+  width: auto;
+  padding: 10px 20px;
+  margin-left: 10px;
+}
+
+/* チェックボックスのサイズとカスタムスタイル */
+input[type="checkbox"] {
+  width: 30px; /* チェックボックスの幅を大きくする */
+  height: 30px; /* チェックボックスの高さを大きくする */
+  cursor: pointer; /* カーソルをポインタに設定 */
+  margin-right: 20px; /* ラベルとの間隔を調整 */
+  vertical-align: middle; /* テキストと垂直中央に合わせる */
+}
+
+label {
+  display: inline-block; /* ラベルをインラインブロック要素に変更 */
+  margin-bottom: 12px; /* ラベルの下マージンを調整 */
+  line-height: 30px; /* ラインの高さをチェックボックスに合わせる */
+  cursor: pointer; /* ラベルにもポインタカーソルを適用 */
+}

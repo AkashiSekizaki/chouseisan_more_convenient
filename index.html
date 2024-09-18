@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./src/ハイビスカス.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>調整さん便利ツール</title>
+  </head>
+  <body>
+    <h1>未来大生向け 調整さん「候補日程」フォーマット作成ツール</h1>
+    <h2>日付の選択</h2>
+    <div><input type="date" id="startDate" /> から</div>
+    <div><input type="date" id="endDate" /> まで</div>
+
+    <h2>時間の選択</h2>
+    <div id="timeOptions">
+      <!-- 初期チェックボックスを表示 -->
+      <input
+        type="checkbox"
+        id="time1"
+        value="1限（9:00-10:30）"
+      />1限（9:00-10:30）
+      <input
+        type="checkbox"
+        id="time2"
+        value="2限（10:40-12:10）"
+      />2限（10:40-12:10）
+      <input
+        type="checkbox"
+        id="time2"
+        value="昼休（12:20-13:00）"
+      />昼休（12:20-13:00）
+      <input
+        type="checkbox"
+        id="time3"
+        value="3限（13:10-14:40）"
+      />3限（13:10-14:40）
+      <input
+        type="checkbox"
+        id="time4"
+        value="4限（14:50-16:20）"
+      />4限（14:50-16:20）
+      <input
+        type="checkbox"
+        id="time5"
+        value="5限（16:30-18:00）"
+      />5限（16:30-18:00）
+    </div>
+    <br />
+    <div>
+      <input type="text" id="newTime" placeholder="時間を入力" />
+      <button onclick="addTime()">時間を追加</button>
+    </div>
+    <br />
+
+    <div>
+      <button onclick="generateDateList()">日付リストを生成</button>
+    </div>
+    <br />
+    <div>
+      <pre id="dateList">※ここに結果が出力されます</pre>
+    </div>
+    <div>
+      <button id="copyButton" style="display: none">コピー</button>
+    </div>
+    <br />
+    <div>
+      調整さんリンク：<a href="https://chouseisan.com/" target="_blank"
+        >https://chouseisan.com/</a
+      >
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
